@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Bot Battlr - Bot Army Recruitment Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Bot Battlr](./screenshot.png)
 
-## Available Scripts
+Bot Battlr is a web application that allows users to recruit and manage their bot army. Users can view a collection of available bots, enlist them into their army, view detailed information about enlisted bots, and retire them as needed. The app provides a user-friendly interface for seamless bot management.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- View a collection of available bots for recruitment.
+- Enlist bots into your personal bot army.
+- View detailed specifications of enlisted bots.
+- Retire enlisted bots from your bot army.
+- Sort available bots based on various criteria.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To run the application locally, follow these steps:
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+git clone https://github.com/Freddie1056/phase2code2.git
+cd bot-battlr
 
-### `npm run build`
+    Install the dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Start the development server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm start
 
-### `npm run eject`
+The application will be accessible at http://localhost:3000 in your web browser.
+Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    Visit http://localhost:3000 in your web browser to access the Bot Battlr application.
+    Browse the available bots in the "Bot Army Recruitment" section.
+    Click on a bot card to view detailed specifications in the "Bot Specs" section.
+    Enlist a bot by clicking the "Enlist" button in the "Bot Specs" section.
+    View your enlisted bots in the "Your Bot Army" section and retire them if needed.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+API Endpoints
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application communicates with the following API endpoints:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    GET /bots: Fetches the list of available bots.
+    GET /bots/:id: Fetches detailed information about a specific bot.
+    DELETE /bots/:id: Removes a bot from the list (retiring the bot).
 
-## Learn More
+Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions are welcome! If you find any issues with the application or want to enhance it, feel free to submit a pull request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    Fork the repository.
+    Create a new branch: git checkout -b feature/your-feature-name
+    Commit your changes: git commit -m "Add some feature"
+    Push to the branch: git push origin feature/your-feature-name
+    Submit a pull request.
 
-### Code Splitting
+Please ensure that your code follows the project's coding guidelines and has appropriate tests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the LICENSE file for details.
