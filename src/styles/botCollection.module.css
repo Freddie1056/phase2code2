@@ -1,0 +1,54 @@
+/* styles/botCollection.module.css */
+
+.botCollection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.bot {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+
+.botImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.name {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.botName {
+  font-size: 18px;
+}
+
+.catchPhrase {
+  margin-top: 10px;
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d32f2f;
+}
